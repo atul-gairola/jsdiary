@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript for a noob : Javascript revision notes</title>
+  </head>
+  <body>
+
+<h1>Javascript 💪</h1>
+
+<h2>Introduction to the language</h2>
+<p>
+  Can you even imagine a productive day without the web? Without websites? In 2020 (...let's just ignore the dangers to humanity this foresaken year brought), we are right now at the peak of connectivity and reach (and corona too, hehe..okay) . All this is possible due to the three small W's.(Yeah I just wanted the www to sound something quirky and its cringy, but I'm still gonna do it, you know why? Because i CAN haha , judgemental pieces of shit )  The websites which can be called the web itself (cause what is web without websites, huh?) are comprised of three main technologies the HTML, the CSS and ofc,or why would I be writing all this under that big black title, Javascript.<br><br>
+
+  HTML is used to put in the contents. Everything that you see on the website the text, buttons, images, icons , all are placed there with the help of HTML. It stands for HyperText Markup Language. A markup language uses tags and easily understandable keywords to add elements and give a format to the website.
+<br><br>
+  CSS stands for Cascading Style Sheeets, this is used for enhancing the presentation of the website, all the colors ,the layout and everything which makes the website appealing and not like this pain to look at page of ugliness  (well I didn't want to waste much time okay and if you've already read this far you don't care about good taste too so stop creating a fuss and keep reading ).
+<br><br>
+  Both these languages don't involve logic like other programming languagesyou are used to, so learning them is respectively easily, cause obv you don't have to use much braincells(that's why I'm in love with these 🥰)
+<br><br>
+  Javascript is a programming language. It is a lightweight, dynamic, object-oriented, and it goess onnnn.... I know its very confusing and you're dude stfu and explain all that first and then carry on,but you see this is the thing with programming languages you don't go from the most basic thing up, you learn something and then related to that somethingand so and so. But these are concepts which form the grounds of Javascript and i will tell you them as we proceed  (wanna get overwhelmed and then say "programming is not my thing ", ofcourse not Mr.Iwannaknoweverythingrn, sabar karo)
+<br><br>
+   Javascript adds functionality to the website and makes it dynamic.
+   What <strong>dynamic</strong> means is that  the page changes with time. For example this webpage is static,i.e, it will remain the same no matter how many times you open it, unless i make some changes in the html here and republish it. Dynamic websites do not remain the same, they change like facebook has new feed everytime you open it, that is dynamic.<br>
+   Earlier Dynamic (this is not the same as a dynamic programming language) websites were server-side scripted. (A srever is nothing but a 24*7 working computer which handles the functioning of the website). This means that data is uploaded and recieved by the server which takes some time.
+   Enter Javascript.. this programming language was created to do client side scripting and rendering. The browser acts as the compiler to the language, thus we can ad logic on the client side only that means less interaction with the server thus it is faster.<br>
+   Now with the incoming of Node.js *audience thunders* JS can also be used in the backend to create server-side programming.Node creates a environment for JS to be run without the browser ,i.e,on the system. Backend, in programming, means the side which is not visible to the user. The whole layout and presentationof the page is frontend. (See, Im explaining every little detail i can, be grateful)
+<br><br>
+   Now javascript is not the almighty language, it has some caps like it is not good for making huge apps as it becomes hard to handle and debug and ofc some more which i am not capable of explaining (rn that is fucker)<br><br>
+
+   Ahead we'll start diving into this beautiful Language *drumrolls* Javascript.<br>
+
+   Cheerios for coming this far 🙌🙌 <br><br>
+
+   P.S   NO...JAVASCRIPT IS NOT RELATED TO JAVA
+ </p>
+
+ <h2>BASICS</h2>
+<p>Let's start with the basics, now most of the concepts here are general to programming itself and not any language dependent, some differences are there in every language and I will keep stating them for JS as they come.
+Ready? 👍 </p>
+
+<p>First things first: We use console.log() to print on the console. Okay now, go</p>
+<ul>
+  <li><h3>Variables and Data Types</h3> </li>
+  <p>Everybody here has a hunch of what variables might be (thanks to 8th grade maths), so yeah.. Variables are places where some information is stored. In more technical language it is a named memory location which is used to store some data.<br>
+  The name that you give to the variable is called <span>IDENTIFIER</span>. Just like a variable "x" in maths which can be anything.<br><br>
+
+Languages have different ways of declaring a variable.In javascript we declare a variable by putting the 'var' keyword in front of it.<br><br><br>
+
+<span>EX:</span><br><br>
+
+        &emsp;&emsp;&emsp;  var x = 8 ;  // just declaring the variable with identifier 'x'<br><br><br>
+
+In this example a memory is allocated with the name 'x' and a value of 8 is assigned to it.
+We can declare variable with 2 more keywords 'let' and 'const'. I will discuss this further in this topic.<br><br>
+
+  In maths this x could only have numerical values, but we program almost everything and not just numbers,so here comes the concept of <span>DATATYPES</span>.<br>
+  A datatype tells the compiler what type of data is going to be stored.<br><br>
+
+  Javascript has 6 basic datatype:
+  <ul>
+    <li><u>Number</u></li>
+    <p>The data is a number 0,1,2,3,9909,etc</p>
+    <li><u>String</u></li>
+    <p>The data is a string ex: 'cat','blacboard','atom',etc</p>
+    <li><u>Boolean</u></li>
+    <p>The data is either true or fales.</p>
+    <li><u>Object</u></li>
+    <p>This is a vast topic and will be discussed later</p>
+    <li><u>Undefined</u></li>
+    <p>When the variable is only declared and not assigned any value it automatically takes the value of undefined</p>
+    <li><u>Null</u></li>
+    <p>It is empty, has no value. *Not the same as undersigned*</p>
+  </ul>
+<br>
+When introducing Javascript i told you it is a dynamic language right?<br>
+There are two types of typed language: Dynamic and Statically typed.<br><br>
+Statically typed means that the coder has to define the data type of the variable while declaring it as we see in the common programming languages like C , C++, Java etc.<br><br>
+
+<span>EX:</span><br><br>
+
+              &emsp;&emsp;&emsp; int a; //declaring it is integer type <br>
+            &emsp;&emsp;&emsp;   float b; //it is float typed <br>
+              &emsp;&emsp;&emsp; char x; //it is character type <br><br><br>
+
+Dynamic or loosely typed language means that the compiler itself assigns the data type as per the data we assign the variable. Languages like JS and python etc are loosely typed. This makes them fast to code in.<br><br>
+
+
+<span>EX:</span><br><br>
+
+            &emsp;&emsp;&emsp; var a = 8;  // the datatype dynamically changes to number <br>
+            &emsp;&emsp;&emsp; var b = 'Cat';  // the datatype dynamically changes to string <br>
+            &emsp;&emsp;&emsp; var c = true;  // the datatype dynamically changes to boolean <br><br><br>
+
+
+<strong>before we move ahead let me explain you the concept of scope</strong>
+
+ <h4>Scope</h4>
+ <p>Every variable or function in js has a scope. A scope is like the boundary till which the variable is valid.<br>
+ Variables and functions are either declared with a global scope or a local scope ,i.e ,globally or locally. To explain this we'll take help of an example <br><br>
+
+Assume your sector where you live is the complete code. The houses with their boundaries are different funcitons. Now there is an apple tree inside the boundaries of your house in your garden (you have a huge bunglow with huge kitchen garden,... too much? ), your neighbours can't access the tree right? This means that the scope of your tree is local to your house.<br>
+Now lets assume there is a tree in your sector not in anybodies house, so anyone can access it. This means it has a global scope.<br>
+And lets take another assumption of an apple tree in the sector surrounded by a very small and weak wall.<br><br>
+
+Now any variable declared outside of all the functions but in the code is <u>globally declared</u>. It can be accessed anywhere in the whole program.<br><br>
+
+<span>EX:</span><br><br>
+
+                &emsp;&emsp;&emsp;var a = 10;&emsp;&emsp;&emsp; // declaring the variable globally<br><br>
+
+                &emsp;&emsp;&emsp;console.log(a);&emsp;&emsp;&emsp; // using the variable outside of any function <br><br>
+
+                &emsp;&emsp;&emsp;&emsp;function xyz(){<br><br>
+
+                &emsp;&emsp;&emsp;&emsp; console.log(a + 10);&emsp;&emsp;&emsp;  //a can be used even inside of a function <br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}
+<br><br>
+<strong>OUTPUT</strong><br><br>
+
+                &emsp;&emsp;&emsp; 10 <br>
+                &emsp;&emsp;&emsp; 20 <br><br>
+
+
+If we declare a variable inside of the funnction xyz then its scope is of the function itself, it can not be accessed outside of the function.<br><br>
+
+<span>EX:</span><br><br>
+
+                &emsp;&emsp;&emsp;var a = 10;&emsp;&emsp;&emsp; // declaring the variable globally<br><br>
+
+                &emsp;&emsp;&emsp;console.log(a);&emsp;&emsp;&emsp; // using the variable outside of any function <br><br>
+
+                &emsp;&emsp;&emsp;&emsp;function xyz(){<br><br>
+
+                &emsp;&emsp;&emsp;&emsp; var b = a + 10;&emsp;&emsp;&emsp;  //a can be used even inside of a function <br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} <br><br>
+
+                &emsp;&emsp;&emsp;console.log(b);&emsp;&emsp;&emsp; //this will throw an error as it is trying to access 'b'outside of its scope which is xyz.
+<br><br>
+
+
+
+<br><br><strong>I stated earlier that we can use 2 more keywords to declare variables namely, 'let' and 'const'</strong>
+ </p>
+
+<ol>
+  <li><h4>let</h4></li>
+  <p>'let' keyword functions much like 'var' with slight differences in their <strong>scope</strong>.
+      It is declared in the exact same way and acts the same untill it is used in a block.<br>
+      In an block statement, which we will learn ahead, its scope remains local to the block while the 'var' has a global scope.<br>
+      Remeber the tree inside weak boundary? This block statement is that tree, some can be accesed thorugh it and some can't.<br>
+      This is the difference between 'let' and 'var'.
+   </p>
+   <li><h4>const</h4></li>
+   <p>
+     'const' is used to declare a constant.Once it has been declared it cannot be changed throughout the program. It is given a value at its declaration itself. It follows the scope rule same as 'let'.
+   </p>
+</ol>
+<br><br>
+<p>
+<h3><u>VARIABLE MUTATION</u></h3><br>
+Variable Mutation means that as javascript is dynamic thus it changes the datatype of the variable according to the input. So if at first we have given a number and then to the same variable a string, it automatically changes the datatype of the variable.<br><br>
+
+<span>EX:</span><br><br>
+
+                &emsp;&emsp;&emsp;var a = 10;<br>
+                &emsp;&emsp;&emsp;a = 'Cat';<br>
+                &emsp;&emsp;&emsp;console.log(a);<br>
+                <br><br>
+                <strong>OUTPUT</strong><br><br>
+
+                                &emsp;&emsp;&emsp; Cat <br><br>
+
+This is called Variable mutation.<br><br>
+
+
+</p>
+
+</ul>
+
+  </body>
+</html>
