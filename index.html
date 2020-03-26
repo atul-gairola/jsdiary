@@ -54,7 +54,7 @@
   <p>First things first: We use console.log() to print on the console. Okay now, go</p>
   <ul>
     <li>
-      <h3>Variables and Data Types</h3>
+      <h3>VARIABLES AND DATA TYPES</h3>
     </li>
     <p>Everybody here has a hunch of what variables might be (thanks to 8th grade maths), so yeah.. Variables are places where some information is stored. In more technical language it is a named memory location which is used to store some data.<br>
       The name that you give to the variable is called <span>IDENTIFIER</span>. Just like a variable "x" in maths which can be anything.<br><br>
@@ -198,6 +198,60 @@
           <br>
           <strong>for more knowledge on the topic <a href="https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/">click here</a> to read an excellent blog post by freecodecamp on type coercion.</strong>
         </ol>
+<br><br>
+    <li><h3>OPERATORS</h3></li><br><br>
+     As the name suggest OPERATORS perform operations on 2 or 1 operands (element on which operator performs the operation is called the operand).These are present in all programming languages you can find. In Javascript there are 6 types of operators :
+     <ol>
+       <li>Arithematic Operators</li>
+       <li>Comparison / Relational Operators</li>
+       <li>Bitwise Operators</li>
+       <li>Logical Operators</li>
+       <li>Assignment Operators</li>
+       <li>Special Operators</li><br><br>
+     </ol>
+     <h4>Arithematic Operators</h4>
+
+     Arithematic operators perform simple math operations, all of them are binary operators (require 2 operands ) except Increment and Decrement Operators which are unary (require only 1 operand) .<br><br>
+     <script src="https://gist.github.com/atul-gairola/1a9503e6fec95d69d5617076aae1ead1.js"></script>
+     <br><br>
+
+     <h4>Comparison Operator</h4>
+
+     Comparison operators as the name suggest compares two operands. If the are equal,greater,smaleer,etc. They find relation between the 2 operands thus they are also called relational operators<br><br>
+     <script src="https://gist.github.com/atul-gairola/d1ccb916a90ca29a9709ed653cc73ec1.js"></script>
+     <br><br>
+
+     <h4>Bitwise Operator</h4>
+
+     Bitwise operators convert the numbers into binary then apply the logic then convert them back to the number. Javascript uses 32 bits bitwise operators but it stores numbers in 64 bits so it converts them to 32 bits and then apply the bitwise operator and then convert them back to 64bit.<br><br>
+     Javascript Bitwise operators are properly explained <a href="https://www.w3schools.com/js/js_bitwise.asp">here</a>.
+     <br><br>
+
+     <h4>Logical Operator</h4>
+
+     Logical operators apply logic between 2 expressions. The operands of the logical operators should return boolean values. Logical operators also return boolean values.<br><br>
+     <script src="https://gist.github.com/atul-gairola/47bcad1032db7f7ce675274e95135833.js"></script>
+     <br><br>
+
+     <h4>Assignment Operator</h4>
+
+     They assign the values on the right side to the left side.<br><br>
+     <script src="https://gist.github.com/atul-gairola/d2f3830d9b3b6a91dc1460fb9d1c5b04.js"></script>
+     <br><br>
+
+     <h4>Special Operators</h4>
+
+     These are different operators with different purposes<br><br>
+     <script src="https://gist.github.com/atul-gairola/71b9f9a9bf1e6f7584306f1ecf293f02.js"></script>
+     <br><br>
+
+     <h3><u>Operator Precedence</u></h3>
+     We all have in our junior maths classes, learnt the BODMAS rule that in an expression like <br>
+     (a+b) * c - d <br>
+     first things inside the brackets will be solved then we multiply then we do add or subtract and so on.<br>
+     This is the precedence of operators i.e operators are to be used in a specific order. In JS we have given a numerical value of precedence to all the operator (table given <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">here</a>)<br>
+     Expressions are calculated on the basis of this precedence table.
+
 
       </p>
 
