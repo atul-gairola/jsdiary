@@ -199,7 +199,7 @@
           <strong>for more knowledge on the topic <a href="https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/">click here</a> to read an excellent blog post by freecodecamp on type coercion.</strong>
         </ol>
 <br><br>
-    <li><h3>OPERATORS</h3></li><br><br>
+    <li><h3>OPERATORS</h3></li>
      As the name suggest OPERATORS perform operations on 2 or 1 operands (element on which operator performs the operation is called the operand).These are present in all programming languages you can find. In Javascript there are 6 types of operators :
      <ol>
        <li>Arithematic Operators</li>
@@ -250,9 +250,71 @@
      (a+b) * c - d <br>
      first things inside the brackets will be solved then we multiply then we do add or subtract and so on.<br>
      This is the precedence of operators i.e operators are to be used in a specific order. In JS we have given a numerical value of precedence to all the operator (table given <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">here</a>)<br>
-     Expressions are calculated on the basis of this precedence table.
+     Expressions are calculated on the basis of this precedence table.<br><br>
 
+     <li><h3> IF-ELSE STATEMENTS </h3></li>
+     If-else statements are conditional statements,they are block of codes which execute if certain condition is fulfilled. <br>
+     The Syntax (or the way of writing *programmers like to use fancy words*) of the if else statement is given below: <br><br>
+     <script src="https://gist.github.com/atul-gairola/35e1c5562c35d718b7051e605446c922.js"></script>
+     <br><br>
+     The condition is boolean ,that is, it is either true or false (remember what are booleans?). If the condition is true the code in the if block executes else the one in the 'else' block.<br>
+     Consider the compiler as your butler and you like a high headed rich lad order him that <br>
+     if (this happens) do this <br>
+     else do this <br>
+     Now assume that there are more than one conditions, we programmers also have this sorted with 'else-if'<br><br>
+     <script src="https://gist.github.com/atul-gairola/c542d65cdd93c2afb3c223576ce2bfc7.js"></script>
+     <br><br>
+     <h4>Nested if</h4>
+     Nested if statements are nothing but if statements inside another if statement. It's like first we check the outer condition, according to its outputs we have another condition to be checked, then that condition is checked and its block of code is run.<br><br>
+     <script src="https://gist.github.com/atul-gairola/ce3d662a49b412283634e70261e550cf.js"></script>
+     <br><br>
+     In this example we first check the condition if(x!==y), if this is the case the 'if' block executes else the 'else' block which tells that they are equal.<br>
+     Inside the if block as the numbers are not equal we have another condition to see if 'x > y'. If this is true it console logs 'x is greater', else it will mean y is greater so it concole logs 'y is greater'.
+     <br><br>
 
+    <li><h3> SWITCH CASE </h3></li>
+    Switch case is also a from of conditional statements. It is an alternative of if-else and is used when the number of conditions are a lot. (it is generally taken that if else is used for 5 or less conditions and switch case is used for more than that, tho it is not compulsory, you can use whatever you like.)<br><br>
+
+    <script src="https://gist.github.com/atul-gairola/52ec63a4911c4e2f1223d2c1720f2903.js"></script>
+    <br>
+
+    The Syntax of the switch case is given above. In the switch paranthese We write an element which has a single value. Like here n can have 0,1,2.. single values which can be represented as its different cases.<br>
+    Writing 'case 0:' is similar to writing 'if(n === 0){...}'.<br>
+    So switch case provides an easy format to write conditional statements with many confitions.
+    It first checks the case 0 the goes to 1 the goes to 2 and so on.<br>
+    The default case is written that if none of the upper case is true then code inside the default is executed. It is not compulsory to write the default.<br>
+    If we dont want it to check any more once we get the value we can use 'break'
+    <br>
+    <strong>Break</strong> - is used to exit a block. So writing break somwhere inside the block would mean that all the code after break is not seen. <br><br>
+    <script src="https://gist.github.com/atul-gairola/88ebec9152a79d8130ec26965481314e.js"></script>
+<br><br>
+
+<li><h3> ARRAYS </h3></li>
+Remeber I stated the 6 basic data types in Javascript : string, number, boolean, undefined, null and Object. <br>
+The first five are called Primitve data types. So Javascript has 5 primitve data types and rest everything are objects. We will dive deeper into objects later. <br>
+Arrays also, like almost everything ,comes under objects in JavaScript ("Object oriented language", ring a bell?). <strong>Arrays are a collection of similar data in consecutive memory locations.It is a data structure.</strong> Arrays are a basic programming concept not native to Javascript only.<br><br>
+The data is stored in the memory locations according to their size, and each memory location has a number assigned to it. Generally when we declare variables they store the data into random memory locations. In a array we store data in consecutive memory locations.<br><br>
+As we read they contain similar type of data, but in Javascript, thanks to type coercion we can store mixed data types inside arrays.<br><br>
+<script src="https://gist.github.com/atul-gairola/562b00396011788bd3c9fa8a25d46175.js"></script>
+<br><br>
+Arrays have sometheings called as their <strong>index</strong>.<br>
+Index refers to the position of the elemet in the array. In javascript arrays are 0 based , that is the index of the first element is refered to as 0 and the next as 1 and then 2 and so on....<br>
+We can select the desired element from the array based on its index <br>
+<script src="https://gist.github.com/atul-gairola/e6e1af3524fd9c5b1397931b4112e892.js"></script>
+<br>
+In javascript there are many methods(functions which are linked to an object, will be explained in detail later) which can be applied to arrays. They perform certain tasks (as they are nothing but functions only). As they are linked to objects unlike functions when we call a method we use the dot(.) operator. The dot operator states to which object is the method linked to.We write the array name then the dot operator then the method and paranthese (as they are also functions, yes ik repeating the same stuff makes me annoying. Well, i am).<br><br>
+<script src="https://gist.github.com/atul-gairola/e6c8348b18c0b20d9832a1f2dc07815c.js"></script>
+<br>
+ As arrays are also objects there are various methods which can be used on them. Some of the most common are:<br>
+ <strong>length()</strong>- The length method as seen in the example above returns the length of the array.<br>
+ <strong>push(a)</strong>- The push method takes in the parameter and add its to the last of the array.<br>
+ <strong>pop()</strong>- The pop method removes the last element of the array.<br><br>
+ <script src="https://gist.github.com/atul-gairola/25dc19552ba5e7273aa4c1ed7d62e9e1.js"></script>
+ <br><br>
+ <strong>OUTPUT</strong><br><br>
+ <img class="output op6" src="images/output/output-6.png" alt="">
+ <br><br>
+ There are many more methods for arrays in Javascript and you can check them <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">here.</a>
       </p>
 
   </ul>
