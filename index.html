@@ -289,6 +289,27 @@
     <script src="https://gist.github.com/atul-gairola/88ebec9152a79d8130ec26965481314e.js"></script>
 <br><br>
 
+<li><h3> FUNCTIONS </h3></li>
+After discussing variables in detail now we come to another core concept ,or feature you can call it, of programming i.e FUNCTIONS.<br>
+Functions are blocks of code that perform a certain task. <br>
+For ex - If you have to calculate the age of a person by his year of Birth then you write some code and put it inside a named block. Now the block of code performs the function of calculating the age. And this is called a function.<br>
+In programming we have a concept <strong>DRY</strong> which means <strong>Dont Repeat Yourself</strong>.<br>
+We use function calls wherever we need the same piece of code to do the same function.<br><br>
+<script src="https://gist.github.com/atul-gairola/5c6d75324b73857bb00f499ba6ddd0cd.js"></script><br>
+<script src="https://gist.github.com/atul-gairola/f7ce4ca9686ec46b267188d8c5dcb135.js"></script><br>
+<strong>SCOPE</strong><br><br>
+Any variable or function declared inside a function (yes we can make nested a function) have a scope of the function only. That means that they can not be accessed outside the function.<br><br>
+<script src="https://gist.github.com/atul-gairola/2900d5a9ebc7a7af9f9059ccf1d7e6b3.js"></script>
+<strong>OUTPUT</strong><br><br>
+<img class="output op6" src="images/output/output-6.png" alt="">
+<br>
+As you can see in the above example the variable 'a' declared inside the function cannot be accessed outside it.<br><br>
+<strong>FUNCTION EXPRESSIONS</strong><br><br>
+We can declare functions as expressions without naming them. The variable we assign the function makes the name of the function.<br><br>
+<script src="https://gist.github.com/atul-gairola/6d6ad429e5c4c3a6b381b142311e163c.js"></script><br><br>
+We can still write the function name in a function expression to call it inside itself (Recursion) <br><br>
+<script src="https://gist.github.com/atul-gairola/a4e869fe40ebf3edb2f42181035f9e43.js"></script><br><br>
+
 <li><h3> ARRAYS </h3></li>
 Remeber I stated the 6 basic data types in Javascript : string, number, boolean, undefined, null and Object. <br>
 The first five are called Primitve data types. So Javascript has 5 primitve data types and rest everything are objects. We will dive deeper into objects later. <br>
@@ -315,6 +336,27 @@ In javascript there are many methods(functions which are linked to an object, wi
  <img class="output op6" src="images/output/output-6.png" alt="">
  <br><br>
  There are many more methods for arrays in Javascript and you can check them <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">here.</a>
+ <br><br>
+
+
+
+
+ <h4><u>Primitive Data Types vs Objects</u></h4>
+  I've told you that there are two basic datatypes - primitve(Number,string,boolean,null,undefined and symbol(adden in ES6)) and objects.
+  The major difference between them is how they are declared as variables.<br>
+  Now when we assign a variable to a primitive data type it stores the data on a memory location by the name of the identifier. Like we know, simple. <br>
+  But when it comes to objects they are already stored in a prior defined memory location and when we assign it a variable it just means that the variable hold the memory location of where it is stored. The variable acts as a pointer to the actual object.<br><br>
+<script src="https://gist.github.com/atul-gairola/39a88c4d1d43a97112b6e3e1d626f969.js"></script>
+  <strong>OUTPUT</strong><br><br>
+  <img class="output op7" src="images/output/output-7.png" alt="">
+  <br><br>
+  This is the expected output we get. Declaring y = x creates a copy of x and stores it in the memory location with identifier y. So if we change x, y still remains unaffected.<br><br>
+<script src="https://gist.github.com/atul-gairola/97cf2aec18a97e2d06a74343371180e5.js"></script>
+  <strong>OUTPUT</strong><br><br>
+  <img class="output op8" src="images/output/output-8.png" alt="">
+  <br><br>
+  In this example we can see when we declare y as the object 'john' and then later change the age of john then the age of john also changes in y. This means that a seperate copy of the object is not made for y. This is the difference between objects and primitives. The variables just point towards the actual memory and do not contain the data themselves.
+
       </p>
 
   </ul>
