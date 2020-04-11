@@ -337,9 +337,33 @@ In javascript there are many methods(functions which are linked to an object, wi
  <br><br>
  There are many more methods for arrays in Javascript and you can check them <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">here.</a>
  <br><br>
-
-
-
+ <li><h3> OBJECTS </h3></li>
+Objects is the strongest pillar on which JS is standing. Objects like arrays are also used to store more than one variable which can be grouped together. Here we are going to take a brief into to Objects and will explore its true "powers and potentials" later as we come across them.<br>
+Yes, so objects are used to store more than one variables together as a group. But as you've seen in arrays we call them through their index,thus, order in which the elements are placed is important. But in Objects  we call them through a name as we are just going to see in a sec,  so order is not important in objects.<br><br>
+<script src="https://gist.github.com/atul-gairola/9112b01b6cc0597eeccb3dbb46c67fea.js"></script><br><br>
+<strong>OUTPUT</strong><br><br>
+<img class="output op10" src="images/output/output-10.png" alt="">
+<br><br>
+This is called an Object literal. This is one way of declaring an object. We, as we do it with any variable, use var (or let or const , you know now comeon) and write an identifier in front of it. In this case 'shape'. The contents inside an object are placed inside curly braces ending with a semicolon. The variables inside objects are called its properties. For example, here 'color' is a property of the object 'shape'. The properties are named and their description is written after putting a colon. As in the arrays we can use any data type in here (thanks to the all powerful type coercion). We then seperate different properties using commas as the same we used to do in arrays.<br>
+As here are no indexes so order does not matter, we call the properties by their name.
+Using the dot operator after the object identifier (obv to tell which objects propeties do we wanna access) and the the property name itself as shown in the example above.<br>
+We can also call them using the "[]" (normal brackets should i say?). We type in the property name as a string as shown in the example.<br>
+We can literally put any thing as properties of an object, be it primary variables, arrays, functions (just explaining about it, hold on) and even objects inside objects!! COOOOL right? <br>
+The object literal is not the only way to declare objects, like arrays they can also be declared using the new keyword. <br><br>
+<script src="https://gist.github.com/atul-gairola/a8b3d1e43bd4863971af57825cc141dc.js"></script>
+<br><br>
+<strong>OUTPUT</strong><br><br>
+<img class="output op11" src="images/output/output-11.png" alt="">
+<br><br>
+<h3>Methods</h3>
+Remember we have used the word methods before and you might be thinking what the hell is he talking about, So here we will explain all about methods.<br>
+Methods are nothing but functions which are propeties of an object. They are functions only but programmers wanna use fancy names so when they are properties of an object they like to call them methods. Why? idk, fine?<br><br>
+<script src="https://gist.github.com/atul-gairola/b82a3101e74c695c7081f4479a9b4cf8.js"></script>
+<br><br>
+<strong>OUTPUT</strong><br><br>
+<img class="output op12" src="images/output/output-12.png" alt=""><br><br>
+The function calcutaeAge is a method of the object john. Remeber we have read the different methods of arrays. As we know already everything in JS is an object except the primitives so array is also an object which has methods like push() and pop(). We will dive into the architecture of Javascript in greater detail later on.<br><br>
+<h3>THIS Keyword</h3>
 
  <h4><u>Primitive Data Types vs Objects</u></h4>
   I've told you that there are two basic datatypes - primitve(Number,string,boolean,null,undefined and symbol(adden in ES6)) and objects.
@@ -355,7 +379,8 @@ In javascript there are many methods(functions which are linked to an object, wi
   <strong>OUTPUT</strong><br><br>
   <img class="output op8" src="images/output/output-8.png" alt="">
   <br><br>
-  In this example we can see when we declare y as the object 'john' and then later change the age of john then the age of john also changes in y. This means that a seperate copy of the object is not made for y. This is the difference between objects and primitives. The variables just point towards the actual memory and do not contain the data themselves.
+  In this example we can see when we declare 'y' as the object 'john' and then later change the age of john then the age of john also changes in y. This means that a seperate copy of the object is not made for y. This is the difference between objects and primitives. The variables just point towards the actual memory and do not contain the data themselves. <br><br>
+
 
       </p>
 
