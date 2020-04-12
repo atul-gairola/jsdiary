@@ -355,15 +355,17 @@ The object literal is not the only way to declare objects, like arrays they can 
 <strong>OUTPUT</strong><br><br>
 <img class="output op11" src="images/output/output-11.png" alt="">
 <br><br>
-<h3>Methods</h3>
+<h3><u>Methods</u></h3>
 Remember we have used the word methods before and you might be thinking what the hell is he talking about, So here we will explain all about methods.<br>
 Methods are nothing but functions which are propeties of an object. They are functions only but programmers wanna use fancy names so when they are properties of an object they like to call them methods. Why? idk, fine?<br><br>
 <script src="https://gist.github.com/atul-gairola/b82a3101e74c695c7081f4479a9b4cf8.js"></script>
 <br><br>
 <strong>OUTPUT</strong><br><br>
 <img class="output op12" src="images/output/output-12.png" alt=""><br><br>
-The function calcutaeAge is a method of the object john. Remeber we have read the different methods of arrays. As we know already everything in JS is an object except the primitives so array is also an object which has methods like push() and pop(). We will dive into the architecture of Javascript in greater detail later on.<br><br>
-<h3>THIS Keyword</h3>
+The function calcutaeAge is a method of the object john. Remeber we have read the different methods of arrays. As we know already everything in JS is an object except the primitives so array is also an object which has methods like push() and pop(). We will dive into the architecture of Javascript in greater detail later on.<br>
+We can use a this keyword inplace of john when we are inside of the method. The this keyword changes its value according to where the function is called. We will dive deeper into this ahead. The same example with the this keyword is shown below <br><br>
+<script src="https://gist.github.com/atul-gairola/db789cfc3f2dcf48b97a0d7cb7d1f40c.js"></script>
+<br><br>
 
  <h4><u>Primitive Data Types vs Objects</u></h4>
   I've told you that there are two basic datatypes - primitve(Number,string,boolean,null,undefined and symbol(adden in ES6)) and objects.
@@ -375,13 +377,40 @@ The function calcutaeAge is a method of the object john. Remeber we have read th
   <img class="output op7" src="images/output/output-7.png" alt="">
   <br><br>
   This is the expected output we get. Declaring y = x creates a copy of x and stores it in the memory location with identifier y. So if we change x, y still remains unaffected.<br><br>
-<script src="https://gist.github.com/atul-gairola/97cf2aec18a97e2d06a74343371180e5.js"></script>
+<script src="https://gist.github.com/atul-gairola/db789cfc3f2dcf48b97a0d7cb7d1f40c.js"></script>
   <strong>OUTPUT</strong><br><br>
   <img class="output op8" src="images/output/output-8.png" alt="">
   <br><br>
   In this example we can see when we declare 'y' as the object 'john' and then later change the age of john then the age of john also changes in y. This means that a seperate copy of the object is not made for y. This is the difference between objects and primitives. The variables just point towards the actual memory and do not contain the data themselves. <br><br>
 
-
+<li><h3> lOOPS AND ITERATIONS </h3></li>
+Loops are a coding blocks which are used to perform similar type of action again and again until a specific condition is met. For example we have to console.log() the first 10 digits. <br>
+We can do that like console.log(1); console.log(2)...... but this is a bit tedious and we as coders don't like tedious jobs. Moreover what if we have to console log 100 digits or thousand digits, we can not do that simply writing each of them right? Here are two loops we use to iterate (repeate) a piece of code again and again.
+<h3><u>FOR Loop</u></h3>
+The for loop starts with the keyword 'for' (pff, obv) and requires 3 things to be specified, the initialization, the condition till when to iterate, and what is going to happen. Yeah, yeah, explaining in detail: <br><br>
+<script src="https://gist.github.com/atul-gairola/f9ee576aef6391a8ff1114004c0bbac8.js"></script>
+<strong>OUTPUT</strong><br><br>
+<img class="output op13" src="images/output/output-13.png" alt="">
+<br><br>
+And this in just 3 lines of code we are able to print as many numbers as we want. This is the power of loops. Loops are very useful and can be used in a variety of ways, most commonly they are used to traverse arrays :<br><br>
+<script src="https://gist.github.com/atul-gairola/79ec7adb851f8b7c33660a1ad454f30a.js"></script>
+<strong>OUTPUT</strong><br><br>
+<img class="output op14" src="images/output/output-14.png" alt="">
+<br><br>
+<h3><u>While Loop</u></h3>
+As the name suggest the while loop iterates while a given condition is being met. We use the keyword 'while' and then write a boolean condition in brackets next to it. The code executes till the the condition is met.
+<br><br>
+<script src="https://gist.github.com/atul-gairola/0b96b2bfc12862af433d715640af88d0.js"></script>
+<strong>OUTPUT</strong><br><br>
+<img class="output op15" src="images/output/output-15.png" alt="">
+<br><br>
+<h4>do-while loop</h4>
+Another type of while loop is the do while loop <br><br>
+<script src="https://gist.github.com/atul-gairola/15e7ccd7959b2b09a9ce08cde77faf2e.js"></script>
+<strong>OUTPUT</strong><br><br>
+<img class="output op16" src="images/output/output-16.png" alt="">
+<br><br>
+This means that the block of code will be executed first and then the condition will be checked, thus whatever the case the code is gonna be executed at least once even if the condition is false. The is the difference between while and do-while.
       </p>
 
   </ul>
